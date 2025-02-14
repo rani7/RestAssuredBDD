@@ -1,0 +1,73 @@
+
+[ 
+    {
+        "id": 7697848,
+        "name": "Vasudeva Chaturvedi Ret.",
+        "email": "chaturvedi_ret_vasudeva@bosco.example",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 7697847,
+        "name": "Ritesh Somayaji",
+        "email": "ritesh_somayaji@simonis.test",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 7697846,
+        "name": "Vaidehi Kapoor",
+        "email": "vaidehi_kapoor@koss.test",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 7697841,
+        "name": "Mrs. Deepesh Guha",
+        "email": "guha_deepesh_mrs@treutel.test",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 7697840,
+        "name": "Atreyi Patel",
+        "email": "patel_atreyi@stiedemann-balistreri.test",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 7697839,
+        "name": "Jyoti Tagore JD",
+        "email": "jyoti_tagore_jd@bosco.test",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 7697837,
+        "name": "Gayatri Trivedi",
+        "email": "trivedi_gayatri@harvey-collier.example",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 7697836,
+        "name": "Gov. Swapnil Pothuvaal",
+        "email": "swapnil_pothuvaal_gov@pfeffer.example",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 7697835,
+        "name": "Ambar Prajapat",
+        "email": "ambar_prajapat@ondricka.test",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 7697834,
+        "name": "Parvati Somayaji",
+        "email": "parvati_somayaji@reichert.example",
+        "gender": "female",
+        "status": "active"
+    }
+]
