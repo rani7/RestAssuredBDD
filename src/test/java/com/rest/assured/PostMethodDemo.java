@@ -97,7 +97,7 @@ public class PostMethodDemo {
 	/* see resources for the kind of response
     {
      "organization":"ABC company",
-     "Employee":
+     "employee":
       [
         {
         "city": "chicago",
@@ -152,9 +152,10 @@ public class PostMethodDemo {
         List<Employee> employeeList = excelReader.readEmployeesFromExcel("C:\\Users\\ranita.saha\\Documents\\workspace\\RestAssuredBDD\\src\\test\\resources\\Data\\emp.xlsx");
         
         JSONArray employees = new JSONArray();
+        JSONObject employeeJson = new JSONObject();
         
         for (Employee employee : employeeList) {
-            JSONObject employeeJson = new JSONObject();
+            
             employeeJson.put("name", employee.getName());
             employeeJson.put("email", employee.getEmail());
             employeeJson.put("gender", employee.getGender());
@@ -179,9 +180,9 @@ public class PostMethodDemo {
 		assertThat().
 		statusCode(201).
 		and().
-		body("Employee[0].name",equalTo("David")).
+		body("employee[0].name",equalTo("David")).
 		and().
-		body("Employee.name",hasItems("David","Tom","Max")).
+		body("employee.name",hasItems("David","Tom","Max")).
 		and().
 		body(employeeList.get(2).getName(),equalTo("David"));
 	}

@@ -1,14 +1,22 @@
 package com.rest.assured.pojo;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Data {
 
-    private String name;
-    private String email;
-    private String gender;
-    private String status;
+	@JsonProperty("name")
+	private String name;
+    
+	@JsonProperty("email")
+	private String email;
+    
+	@JsonProperty("gender")
+	private String gender;
+    
+	@JsonProperty("status")
+	private String status;
     
    
     public String getName() {

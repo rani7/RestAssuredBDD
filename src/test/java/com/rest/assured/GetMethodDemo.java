@@ -3,6 +3,7 @@ package com.rest.assured;
 import org.testng.annotations.Test;
 
 import io.restassured.http.ContentType;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.*;
@@ -64,5 +65,13 @@ public class GetMethodDemo {
 		System.out.println(response.asString());
 		String status=response.getStatusLine();
 		System.out.println("status is : "+status);
+		
+	    /* Json path is used to extract data from a Json response
+	     
+		String json=response.asString();
+		JsonPath jsonPath = new JsonPath(json);
+		String firstBookTitle = jsonPath.getString("store.book[0].title");
+		System.out.println(firstBookTitle);
+		*/
 	}
 }

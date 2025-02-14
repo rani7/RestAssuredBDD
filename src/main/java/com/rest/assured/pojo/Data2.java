@@ -1,8 +1,10 @@
 package com.rest.assured.pojo;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Data2 {
     @JsonProperty("organisation")
     private String organisationName;
@@ -20,16 +22,9 @@ public class Data2 {
         return organisationName;
     }
 
-    public void setOrganisationName(String organisationName) {
-        this.organisationName = organisationName;
-    }
-
     public List<Employee> getEmployees() {
         return employees;
     }
 
-    public void setEmployees(List<Employee> employees) {
-        this.employees = employees;
-    }
 }
 
