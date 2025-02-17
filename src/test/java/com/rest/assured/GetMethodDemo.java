@@ -31,11 +31,11 @@ public class GetMethodDemo {
 		and().
 		body("name", hasItems("Draupadi Tagore", "Ritesh Somayaji", "Aryan Khanna")).
 		and().
-		body("name[3]", equalTo("Aryan Khanna")).
+		body("[3].name", equalTo("Aryan Khanna")).
 		and().
 		body("name", hasSize(greaterThan(5))).
 		and().
-		/*body("age[2]", greaterThan(10)).
+		/*body("[2].age", greaterThan(10)).
 		and().
 		body("name", is(any(String.class))).
 		and().
@@ -55,9 +55,9 @@ public class GetMethodDemo {
 		and().
 		body("name", contains("xyz","abc","def")).
 		and().
-		body("name[3]", equalToIgnoringCase("xyz")).
+		body("[3].name", equalToIgnoringCase("xyz")).
 		and().
-		body("age[2]", greaterThanOrEqualTo(10)).
+		body("[2].age", greaterThanOrEqualTo(10)).
 		and().
 		body("name", hasSize(5)).
 		and().*/
